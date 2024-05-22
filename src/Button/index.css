@@ -1,0 +1,20 @@
+.btn {
+  width: 97px;
+  height: 32px;
+  color: #000;
+  background:none;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.btn.primary {
+  color: #fff;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn.danger {
+  color: #fff;
+  background-color: var(--danger-color);
+  border-color: var(--danger-color);
+}
