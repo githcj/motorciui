@@ -1,0 +1,24 @@
+.detailTitle {
+  --main-bg-color: var(--primary-color);
+
+  height: 40px;
+  background-color: #f7f8fa;
+  width: 95%;
+  margin-bottom: 20px;
+  position: relative;
+  line-height: 40px;
+  padding-left: 30px;
+  font-size: 14px;
+  font-weight: bold;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    height: 16px;
+    width: 5px;
+    background-color: var(--main-bg-color);
+    border-radius: 3px;
+  }
+}

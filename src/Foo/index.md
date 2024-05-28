@@ -1,3 +1,8 @@
+---
+group:
+  title: 基础
+---
+
 # Foo
 
 This is an example component.

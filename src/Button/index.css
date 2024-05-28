@@ -1,19 +1,24 @@
-.btn {
+.motor-btn {
   width: 97px;
   height: 32px;
   color: #000;
-  background:none;
+  background: none;
   border: 1px solid gray;
   border-radius: 5px;
+  transition: transform 0.5s;
 }
 
-.btn.primary {
+.motor-btn:active {
+  transform: scale(1.2);
+}
+
+.motor-btn.motor-btn-primary {
   color: #fff;
   background-color: var(--primary-color);
   border-color: var(--primary-color);
 }
 
-.btn.danger {
+.motor-btn.motor-btn-danger {
   color: #fff;
   background-color: var(--danger-color);
   border-color: var(--danger-color);

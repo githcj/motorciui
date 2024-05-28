@@ -1,0 +1,62 @@
+.g-tag-box {
+  display: flex;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: calc(100% + 30px);
+    left: -20px;
+    bottom: 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  margin-bottom: 10px;
+  color: #999;
+  margin-top: 5px;
+
+  & > div {
+    margin-right: 20px;
+    min-width: 80px;
+    text-align: center;
+    cursor: pointer;
+
+    &.active {
+      color: var(--primary-color);
+      height: 100%;
+      padding-bottom: 6px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        background-color: var(--primary-color);
+        height: 2px;
+      }
+    }
+
+    position: relative;
+
+    &.red::before {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 100%;
+      background-color: red;
+      top: 4px;
+      left: -8px;
+    }
+  }
+}
+
+.overview-page .g-tag-box {
+  margin-top: 0;
+
+  & > div {
+    padding-bottom: 10px;
+  }
+}
